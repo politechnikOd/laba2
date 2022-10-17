@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #89B5AF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+    <children>
+        <Button layoutX="221.0" layoutY="417.0" mnemonicParsing="false" onAction="#login" prefHeight="116.0" prefWidth="334.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 200;" text="Войти" textFill="#181d31">
+         <font>
+            <Font name="Roboto Light" size="48.0" />
+         </font></Button>
+        <Label layoutX="221.0" layoutY="145.0" prefHeight="35.0" prefWidth="223.0" text="Введите логин" textFill="#181d31">
+         <font>
+            <Font name="Roboto Light" size="24.0" />
+         </font></Label>
+        <Label layoutX="221.0" layoutY="247.0" text="Введите пароль" textFill="#181d31">
+         <font>
+            <Font name="Roboto Light" size="24.0" />
+         </font></Label>
+        <TextField fx:id="loginTextField" layoutX="221.0" layoutY="189.0" prefHeight="35.0" prefWidth="334.0" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Roboto Thin" size="18.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordTextField" layoutX="221.0" layoutY="290.0" prefHeight="35.0" prefWidth="334.0" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></PasswordField>
+    </children>
+</AnchorPane>

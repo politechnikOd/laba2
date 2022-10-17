@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #89B5AF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManagerMenuController">
+   <children>
+      <Label fx:id="managerLabel" layoutX="620.0" layoutY="-6.0" prefHeight="89.0" prefWidth="180.0" text="Manager">
+         <font>
+            <Font name="Roboto Light" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="21.0" layoutY="135.0" mnemonicParsing="false" onAction="#newOrder" prefHeight="66.0" prefWidth="180.0" style="-fx-background-color: #FFFFFF;" text="Новый Заказ">
+         <font>
+            <Font name="Roboto Light" size="14.0" />
+         </font></Button>
+      <TableView fx:id="ordersTableView" layoutX="282.0" layoutY="118.0" prefHeight="456.0" prefWidth="482.0" />
+      <Label layoutX="268.0" layoutY="21.0" text="Добро пожаловать менеджер">
+         <font>
+            <Font name="Roboto Light" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="223.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="23.0" style="-fx-background-color: #678983;" />
+      <Button layoutX="21.0" layoutY="528.0" mnemonicParsing="false" onAction="#logout" prefHeight="46.0" prefWidth="87.0" style="-fx-background-color: #bc1111;" text="Выйти" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="19.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

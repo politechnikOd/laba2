@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scenePane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #89B5AF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WorkerMenuController">
+   <children>
+      <Label layoutX="202.0" layoutY="48.0" text="Привет работник">
+         <font>
+            <Font name="Roboto Light" size="25.0" />
+         </font></Label>
+      <Button layoutX="21.0" layoutY="528.0" mnemonicParsing="false" onAction="#logout" prefHeight="46.0" prefWidth="87.0" style="-fx-background-color: #bc1111;" text="Выйти" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font></Button>
+      <Label fx:id="bName" layoutX="421.0" layoutY="57.0" text="NAME" />
+      <TableView fx:id="applicationsTable" layoutX="57.0" layoutY="200.0" prefHeight="298.0" prefWidth="662.0" />
+   </children>
+</AnchorPane>

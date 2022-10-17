@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #89B5AF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddOrderController">
+   <children>
+      <TextField fx:id="fTextField" layoutX="244.0" layoutY="115.0" prefHeight="25.0" prefWidth="313.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="oTextField" layoutX="244.0" layoutY="245.0" prefHeight="25.0" prefWidth="313.0" promptText="необязательно" style="-fx-background-radius: 10;" />
+      <Button layoutX="242.0" layoutY="328.0" mnemonicParsing="false" onAction="#addAplication" prefHeight="80.0" prefWidth="313.0" style="-fx-background-color: #FFFFFF;" text="создать">
+         <font>
+            <Font name="Roboto Light" size="20.0" />
+         </font></Button>
+      <Label layoutX="247.0" layoutY="86.0" text="Введите Адресс">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font></Label>
+      <Label layoutX="245.0" layoutY="151.0" text="Введите дату">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font></Label>
+      <Label layoutX="245.0" layoutY="215.0" text="Введите информацию">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="272.0" layoutY="33.0" text="Создание нового заказа">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <AnchorPane layoutY="1.0" prefHeight="600.0" prefWidth="217.0" style="-fx-background-color: #678983;">
+         <children>
+            <Button layoutX="33.0" layoutY="515.0" mnemonicParsing="false" onAction="#cancel" prefHeight="46.0" prefWidth="87.0" style="-fx-background-color: #FFFFFF;" text="Отменить">
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <AnchorPane layoutX="583.0" layoutY="2.0" prefHeight="600.0" prefWidth="217.0" style="-fx-background-color: #678983;" />
+      <DatePicker fx:id="datePicker" layoutX="245.0" layoutY="184.0" />
+   </children>
+</AnchorPane>
